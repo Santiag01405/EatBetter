@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar - Eat Better</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/pago.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="Eat Better Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/order.html">Menu Semanal</a></li>
+                <li><a href="../html/suscripcion.html">Suscripción</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/tu_instagram" target="_blank">
+                <img src="../images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                <img src="../images/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- Sección de Pago -->
+        <section class="pago">
+            <h2>Realizar Pago</h2>
+            <!-- Mostrar los platillos seleccionados -->
+            <div id="carrito-info"></div>
+            <!-- Mostrar el total a pagar -->
+            <div id="total-pagar"></div>
+            <form>
+                <label for="banco">Banco:</label>
+                <input type="text" id="banco" name="banco" required>
+                <label for="monto">Monto realizado:</label>
+                <input type="number" id="monto" name="monto" required step="0.01">
+                <label for="referencia">Referencia de la transferencia:</label>
+                <input type="text" id="referencia" name="referencia" required>
+                <label for="fecha">Fecha de la transferencia:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <!-- Botón para mostrar datos de pago móvil -->
+                <button type="button" class="btn-info" onclick="mostrarModal()">Datos del Pago Móvil</button>
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn-submit">REGISTRAR</button>
+            </form>
+        </section>
+
+        <!-- Modal con los datos de pago móvil -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <h2>Datos para Pago Móvil</h2>
+                <p><strong>Banco:</strong> Banco X</p>
+                <p><strong>Teléfono:</strong> 0414-XXXXXXX</p>
+                <p><strong>Cédula:</strong> V-XXXXXXX</p>
+                <p><strong>Correo Electrónico:</strong> contacto@eatbetter.com</p>
+                <p>Por favor, realiza el pago móvil con los datos anteriores y completa el formulario con la información de tu transferencia.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Obtener los datos del carrito desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const carritoData = params.get('carrito');
+        const articulosCarrito = JSON.parse(decodeURIComponent(carritoData));
+
+        // Mostrar los platillos seleccionados en el div con id "carrito-info"
+        const carritoInfoDiv = document.getElementById('carrito-info');
+        let totalPagar = 0;
+        console.log(articulosCarrito); // Verificar los datos del carrito
+        articulosCarrito.forEach(plato => {
+            const cantidad = parseFloat(plato.cantidad);
+            const precio = parseFloat(plato.precio);
+            console.log(`Cantidad: ${cantidad}, Precio: ${precio}`); // Verificar los valores de cantidad y precio
+            if (!isNaN(cantidad) && !isNaN(precio)) {
+                const platoDiv = document.createElement('div');
+                platoDiv.innerHTML = `
+                    <p><strong>${plato.titulo}</strong> - ${cantidad} x ${precio.toFixed(2)}</p>
+                `;
+                carritoInfoDiv.appendChild(platoDiv);
+                totalPagar += cantidad * precio;
+            }
+        });
+
+        // Mostrar el total a pagar en el div con id "total-pagar"
+        const totalPagarDiv = document.getElementById('total-pagar');
+        totalPagarDiv.innerHTML = `<p><strong>Total a pagar:</strong> ${totalPagar.toFixed(2)}</p>`;
+
+        // Función para mostrar el modal
+        function mostrarModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        // Cerrar el modal si el usuario hace clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+

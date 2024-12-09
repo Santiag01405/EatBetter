@@ -1,0 +1,103 @@
+/* Estilos para la página de pago */
+
+.pago {
+    padding: 50px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-top: 30px; /* Espaciado superior */
+    background-color: white; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.pago h2 {
+    color: #28662b; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.pago form label {
+    display: block; /* Mostrar en bloque */
+    margin-top: 10px; /* Espaciado superior */
+    color: #555; /* Color del texto */
+}
+
+.pago form input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones */
+.btn-info {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.btn-info:hover {
+    background-color: #0056b3; /* Cambiar a un azul más oscuro al pasar el mouse */
+}
+
+.btn-submit {
+    background-color: #2e7d32; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor de puntero */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.btn-submit:hover {
+    background-color: #1b5e20; /* Cambiar a verde al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Ocultar por defecto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo negro con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Color de fondo */
+    margin: 15% auto; /* Márgenes */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #888; /* Borde */
+    width: 80%; /* Ancho */
+    max-width: 500px; /* Ancho máximo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.close {
+    color: #aaa; /* Color de la X */
+    float: right; /* Flotar a la derecha */
+    font-size: 28px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Color al pasar el mouse o enfocar */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cursor de puntero */
+}

@@ -1,0 +1,257 @@
+/* ingresa estilo a la pagina principal (index) */
+
+/* Estilos para la sección hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.hero-text {
+    max-width: 100%;
+}
+
+.hero-text h1 {
+    color: #2e7d32;
+    font-size: 70px;
+    margin-right: 50px;
+}
+
+.hero-text p {
+    color: #004704;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+/* Estilos para la sección de beneficios */ 
+.benefits {
+    padding: 100px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 950px;
+    text-align: left;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
+    display: flex;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+/* Estilos para la sección de Cómo Solicitar */
+.how-to-order {
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
+}
+
+.how-to-order h2 {
+    color:  #004704;
+    margin-bottom: 20px;
+} 
+
+/*Tienes que probar */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    
+}
+
+ .step {
+    background-color:  #555555c0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 15px;
+    height: 200px
+}
+
+.step img {
+    width: 80px;
+    height: 70px;
+    margin-bottom:1px;
+}
+
+.order-button {
+    background-color:  #004704;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.benefits img {
+    margin-right: 20px;
+    max-width: 150px;
+    height: auto;
+}
+
+.benefits h2 {
+    color: #2e7d32;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* Estilos para los botones */
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons button {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de ordenar */
+.order {
+    margin-top: 0px; /* Ajusta el margen superior para acercar la sección */
+}
+
+
+
+.subscription{
+    background-color: #f1f1f1;
+    padding: 80px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.subscription-image img{
+    max-width: 550px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+.subscription-details{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.subscription ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.subscription h2{
+    font-size: 50px;
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #003202; /* Nuevo color de fondo */
+    color: white;
+    padding: 20px 10px; /* Reducido el padding */
+    margin-top: 30px; /* Reducida la separación superior */
+    font-size: 16px; /* Reducido el tamaño de fuente */
+    position: relative;
+    z-index: 1;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #004A02 0%, #003202 100%); /* Gradiente con el nuevo color */
+    z-index: -1;
+    transform: translateX(-50%);
+    clip-path: ellipse(75% 100% at 50% 0);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea al inicio de las secciones */
+    gap: 150px; /* Espaciado entre las secciones */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-box {
+    flex: 1;
+    margin: 10px; /* Reducido el margen */
+    min-width: 250px; /* Reducido el ancho mínimo */
+}
+
+.footer-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+}
+
+.about-us, .contact-us {
+    text-align: justify; /* Justifica el texto */
+}
+
+.footer-box h1 {
+    color: #f1f1f1;
+    font-size: 22px; /* Reducido el tamaño de la fuente */
+    margin-bottom: 10px; /* Reducido el margen inferior */
+    text-transform: uppercase;
+}
+
+.footer-box p {
+    color: #e0e0e0;
+    line-height: 1.4; /* Reducida la altura de línea */
+}
+
+.footer-box a {
+    color: #a8d5a8;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px; /* Reducido el margen superior */
+    font-size: 12px; /* Reducido el tamaño de fuente */
+    color: #b0d4b0;
+    border-top: 1px solid #004A02; /* Línea superior con el nuevo color */
+    padding-top: 10px; /* Reducido el padding superior */
+}

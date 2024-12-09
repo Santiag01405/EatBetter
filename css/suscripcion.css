@@ -1,0 +1,80 @@
+/* Estilos para la sección de suscripción */
+.subscription-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fcf7e6;
+    border-radius: 50px;
+}
+
+.subscription {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(45, 45, 45, 0.384);
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-image {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.subscription-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.subscription-details h2 {
+    text-align: center;
+}
+
+.subscription-details h3 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.subscription-details ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.subscription-details ul li {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-right: 40px;
+    }
+
+.subscription-details button {
+    padding: 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.384) ;
+}
+
+.subscription-details button:hover {
+    background-color: #45a049;
+}

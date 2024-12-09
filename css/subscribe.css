@@ -1,0 +1,91 @@
+/* ingresa estilo a la pagina de suscripcion (subscribe) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5e6b3;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de suscripción */
+.subscription {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-image img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.subscription-details {
+    width: 50%;
+    text-align: left;
+}
+
+.subscription-details h2 {
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subscription-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subscription-details ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #fbc02d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e1a829;
+}

@@ -1,0 +1,67 @@
+/* ingresa estilo a la pagina de ordenar (order) */
+
+.order {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.order h2 {
+    color: #2e7d32;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* Contenedor para los items del menu */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Ajusta el ancho de los items para que haya espacio entre ellos */
+    box-sizing: border-box;
+}
+
+.menu-item img {
+    height: 150px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.menu-details {
+    text-align: center;
+}
+
+.menu-details h3 {
+    margin: 0;
+    color: #2e7d32;
+}
+
+.menu-details p {
+    margin: 5px 0;
+}
+
+/* Estilos para el boton de añadir */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

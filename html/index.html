@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Better</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="Eat Better Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/login.html">Inicio</a></li>
+                <li><a href="../html/order.html">Menu Semanal</a></li>
+                <li><a href="../html/suscripcion.html">Suscripción</a></li>
+            </ul>
+        </nav>
+        <div class="iconos-header">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tu_instagram" target="_blank">
+                    <img src="../images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                    <img src="../images/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="carrito">
+                <img src="../images/carrito.png" alt="Carrito">
+                <div id="carrito">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button id="ordenar-carrito">Ordenar</button>
+                    <button id="vaciar-carrito">Vaciar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Eat Better</h1>
+                <p>Come mejor, Come por menos</p>
+                <div class="buttons">
+                    <button onclick="window.location.href='login.html'">INICIAR SESIÓN</button>
+                    <button onclick="window.location.href='order.html'">ORDENA</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../images/comida.jpg" alt="Comida Saludable">
+            </div>
+        </section>
+        <!-- Sección de Beneficios --> 
+        <section class="benefits">
+            <img src="../images/logo.png" alt="Logo">
+            <div>
+                <h2>¿Por qué elegir Eat Better?</h2>
+                <ul>
+                    <li><span style="color: green;">✔</span> <strong>Comer sin cocinar:</strong> Disfruta de deliciosas comidas sin la necesidad de cocinar.</li>
+                    <li><span style="color: green;">✔</span> <strong>Comer saludable:</strong> Opta por opciones balanceadas y nutritivas.</li>
+                    <li><span style="color: green;">✔</span> <strong>Ahorrar tiempo valioso:</strong> Dile adiós a las horas en la cocina y gana tiempo para ti.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Sección de Cómo Solicitar -->
+        <section class="how-to-order">
+            <h2>¿Cómo solicitar tus platillos en 3 pasos?</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="../images/platillo_como_ordenar.png" alt="Elige">
+                    <p><strong>1. Elige</strong></p>
+                    <p>Elige tu platillo de preferencia, realizados por nuestros talentosos chefs.</p>
+                </div>
+                <div class="step">
+                    <img src="../images/camion_como_ordenar.png" alt="Recibe">
+                    <p><strong>2. Recibe</strong></p>
+                    <p>Recibe tu pedido en la comodidad de tu hogar.</p>
+                </div>
+                <div class="step">
+                    <img src="../images/calentar_como_ordenar.png" alt="Calienta">
+                    <p><strong>3. Calienta</strong></p>
+                    <p>Simplemente calienta en tu microondas y prepárate para disfrutar de un delicioso platillo.</p>
+                </div>
+            </div>
+            <a href="order.html" class="order-button">ORDENAR</a>
+        </section>
+        <!-- Sección de ordenar con margen superior ajustado -->
+        <section class="order">
+            <div class="menu-container">
+                <div id="lista-carrito" class="menu-item">
+                    <img src="../images/pasta.jpg" alt="Pasta con albahaca">
+                    <div class="menu-details">
+                        <h3>Pasta con albahaca - $5</h3>
+                        <p>Calorías: 250g</p>
+                        <p>Proteínas: 15g</p>
+                        <p>Carbohidratos: 42g</p>
+                        <button class="agregar-carrito" data-id="1">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/panquecas.jpg" alt="Panquecas">
+                    <div class="menu-details">
+                        <h3>Panquecas - $4</h3>
+                        <p>Calorías: 150g</p>
+                        <p>Proteínas: 20g</p>
+                        <p>Carbohidratos: 36g</p>
+                        <button class="agregar-carrito" data-id="2">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/pabellon.jpg" alt="Pabellón">
+                    <div class="menu-details">
+                        <h3>Pabellón - $7</h3>
+                        <p>Calorías: 200g</p>
+                        <p>Proteínas: 18g</p>
+                        <p>Carbohidratos: 40g</p>
+                        <button class="agregar-carrito" data-id="3">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/pasticho.jpg" alt="Pasticho">
+                    <div class="menu-details">
+                        <h3>Pasticho - $5</h3>
+                        <p>Calorías: 300g</p>
+                        <p>Proteínas: 30g</p>
+                        <p>Carbohidratos: 49g</p>
+                        <button class="agregar-carrito" data-id="4">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Beneficios de Suscripción -->
+        <section class="subscription">
+            <div class="subscription-details">
+                <h2>BENEFICIOS DE LA SUSCRIPCIÓN</h2>
+                <ul>
+                    <li><span style="color: green;">✔</span>No tendrás que realizar pedidos semanalmente.</li>
+                    <li><span style="color: green;">✔</span>Cada semana, creamos un menú adaptado a tus preferencias.</li>
+                    <li><span style="color: green;">✔</span>Modificar o cancelar tu suscripción de forma sencilla.</li>
+                    <li><span style="color: green;">✔</span>Recibirás notificaciones sobre promociones y ofertas exclusivas.</li>
+                    <li><span style="color: green;">✔</span>Recibirás descuentos frecuentemente.</strong></li>
+                    <li><span style="color: green;">✔</span>Recibirás obsequios y envíos gratis cada cierto tiempo.</li>
+                </ul>
+            </div>
+            <div class="subscription-image">
+                <img src="../images/persona-comiendo-pasta.jpg" alt="Persona comiendo pasta">
+            </div>
+        </section>
+    </main>
+    <script src="../js/carrito.js"></script>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección Sobre Nosotros -->
+            <div class="footer-box about-us">
+                <h1>SOBRE NOSOTROS</h1>
+                <p>
+                    En Eat Better, creemos que la alimentación saludable debe ser accesible y conveniente. 
+                    Somos un servicio de comidas preparadas que ofrece platillos nutritivos y deliciosos, 
+                    elaborados con ingredientes frescos de alta calidad. Nuestro compromiso es simplificar 
+                    tu vida diaria, permitiéndote disfrutar de más tiempo libre mientras cuidas de tu bienestar. 
+                    Con Eat Better, comer bien es fácil y delicioso. ¡Descubre una nueva manera de disfrutar tus comidas!
+                </p>
+            </div>
+    
+            <!-- Sección Contacto -->
+            <div class="footer-box contact-us">
+                <h1>CONTACTANOS</h1>
+                <p>Teléfono: 0424-4066543</p>
+                <p>Email: <a href="mailto:Eat_Better@gmail.com">Eat_Better@gmail.com</a></p>
+            </div>
+        </div>
+    
+        <!-- Derechos reservados -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eat Better. Todos los derechos reservados.</p>
+        </div>
+    </footer>

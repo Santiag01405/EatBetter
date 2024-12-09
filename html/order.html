@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar - Eat Better</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="Eat Better Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/order.html">Menu Semanal</a></li>
+                <li><a href="../html/suscripcion.html">Suscripción</a></li>
+            </ul>
+        </nav>
+        <div class="iconos-header">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/tu_instagram" target="_blank">
+                    <img src="../images/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                    <img src="../images/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="carrito">
+                <img src="../images/carrito.png" alt="Carrito">
+                <div id="carrito">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button id="ordenar-carrito">Ordenar</button>
+                    <button id="vaciar-carrito">Vaciar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Sección de ordenar con platillos -->
+        <section class="order">
+            <h2>Tienes que probar</h2>
+            <div class="menu-container">
+                <div id="lista-carrito" class="menu-item">
+                    <img src="../images/pasta.jpg" alt="Pasta con albahaca">
+                    <div class="menu-details">
+                        <h3>Pasta con albahaca - 5 $</h3>
+                        <p>Calorías: 250g</p>
+                        <p>Proteínas: 15g</p>
+                        <p>Carbohidratos: 42g</p>
+                        <button class="agregar-carrito" data-id="1">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/panquecas.jpg" alt="Panquecas">
+                    <div class="menu-details">
+                        <h3>Panquecas - 4 $</h3>
+                        <p>Calorías: 150g</p>
+                        <p>Proteínas: 20g</p>
+                        <p>Carbohidratos: 36g</p>
+                        <button class="agregar-carrito" data-id="2">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/pabellon.jpg" alt="Pabellón">
+                    <div class="menu-details">
+                        <h3>Pabellón - 7 $</h3>
+                        <p>Calorías: 200g</p>
+                        <p>Proteínas: 18g</p>
+                        <p>Carbohidratos: 40g</p>
+                        <button class="agregar-carrito" data-id="3">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/pasticho.jpg" alt="Pasticho">
+                    <div class="menu-details">
+                        <h3>Pasticho - 5 $</h3>
+                        <p>Calorías: 300g</p>
+                        <p>Proteínas: 30g</p>
+                        <p>Carbohidratos: 49g</p>
+                        <button class="agregar-carrito" data-id="4">AÑADIR</button>
+                    </div>
+                </div>
+                <!-- Segunda fila de platillos -->
+                <div class="menu-item">
+                    <img src="../images/pollo_asado.jpg" alt="Pollo Asado">
+                    <div class="menu-details">
+                        <h3>Pollo Asado - 6 $</h3>
+                        <p>Calorías: 220g</p>
+                        <p>Proteínas: 30g</p>
+                        <p>Carbohidratos: 20g</p>
+                        <button class="agregar-carrito" data-id="5">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/ensalada_cesar.jpg" alt="Ensalada César">
+                    <div class="menu-details">
+                        <h3>Ensalada César - 4 $</h3>
+                        <p>Calorías: 150g</p>
+                        <p>Proteínas: 10g</p>
+                        <p>Carbohidratos: 15g</p>
+                        <button class="agregar-carrito" data-id="6">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/arroz_con_pollo.jpg" alt="Arroz con Pollo">
+                    <div class="menu-details">
+                        <h3>Arroz con Pollo - 5 $</h3>
+                        <p>Calorías: 250g</p>
+                        <p>Proteínas: 20g</p>
+                        <p>Carbohidratos: 35g</p>
+                        <button class="agregar-carrito" data-id="7">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/sopa_de_vegetales.jpg" alt="Sopa de Vegetales">
+                    <div class="menu-details">
+                        <h3>Sopa de Vegetales - 3 $</h3>
+                        <p>Calorías: 100g</p>
+                        <p>Proteínas: 5g</p>
+                        <p>Carbohidratos: 18g</p>
+                        <button class="agregar-carrito" data-id="8">AÑADIR</button>
+                    </div>
+                </div>
+                <!-- Tercera fila de platillos -->
+                <div class="menu-item">
+                    <img src="../images/arepas.jpg" alt="Arepas">
+                    <div class="menu-details">
+                        <h3>Arepas - 2 $</h3>
+                        <p>Calorías: 180g</p>
+                        <p>Proteínas: 10g</p>
+                        <p>Carbohidratos: 30g</p>
+                        <button class="agregar-carrito" data-id="9">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/hamburguesa_vegetariana.jpg" alt="Hamburguesa Vegetariana">
+                    <div class="menu-details">
+                        <h3>Hamburguesa Vegetariana - 7 $</h3>
+                        <p>Calorías: 300g</p>
+                        <p>Proteínas: 25g</p>
+                        <p>Carbohidratos: 40g</p>
+                        <button class="agregar-carrito" data-id="10">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/pizza_margarita.jpg" alt="Pizza Margarita">
+                    <div class="menu-details">
+                        <h3>Pizza Margarita - 5 $</h3>
+                        <p>Calorías: 280g</p>
+                        <p>Proteínas: 15g</p>
+                        <p>Carbohidratos: 50g</p>
+                        <button class="agregar-carrito" data-id="11">AÑADIR</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/tacos_de_pescado.jpg" alt="Tacos de Pescado">
+                    <div class="menu-details">
+                        <h3>Tacos de Pescado - 6 $</h3>
+                        <p>Calorías: 220g</p>
+                        <p>Proteínas: 18g</p>
+                        <p>Carbohidratos: 25g</p>
+                        <button class="agregar-carrito" data-id="12">AÑADIR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/carrito.js"></script>

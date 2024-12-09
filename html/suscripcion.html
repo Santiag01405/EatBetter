@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción - Eat Better</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/suscripcion.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../images/logo.png" alt="Eat Better Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/order.html">Menu Semanal</a></li>
+                <li><a href="../html/suscripcion.html">Suscripción</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/tu_instagram" target="_blank">
+                <img src="../images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/tu_numero_de_whatsapp" target="_blank">
+                <img src="../images/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="subscription-container">
+            <!-- Suscripción Mensual -->
+            <div class="subscription">
+                <div class="subscription-image">
+                    <img src="../images/1 mes.jpg" alt="Suscripción Mensual">
+                </div>
+                <div class="subscription-details">
+                    <h3><strong>Suscripción Mensual</strong></h3>
+                    <ul>
+                        <li><strong>Precio: 20$</strong></li>
+                    </ul>
+                    <!-- Enlaza a la página de pago con el plan mensual -->
+                    <button type="button" onclick="window.location.href='pago.html?plan=mensual'"><strong>Suscribirse</strong></button>
+                </div>
+            </div>
+
+            <!-- Suscripción Semestral -->
+            <div class="subscription">
+                <div class="subscription-image">
+                    <img src="../images/2 meses.jpg" alt="Suscripción Semestral">
+                </div>
+                <div class="subscription-details">
+                    <h3><strong>Suscripción Semestral</strong></h3>
+                    <ul>
+                        <li><strong>Precio: 102$</strong></li>
+                    </ul>
+                    <!-- Enlaza a la página de pago con el plan semestral -->
+                    <button type="button" onclick="window.location.href='pago.html?plan=semestral'"><strong>Suscribirse</strong></button>
+                </div>
+            </div>
+
+            <!-- Suscripción Anual -->
+            <div class="subscription">
+                <div class="subscription-image">
+                    <img src="../images/12 meses.jpg" alt="Suscripción Anual">
+                </div>
+                <div class="subscription-details">
+                    <h3><strong>Suscripción Anual</strong></h3>
+                    <ul>
+                        <li><strong>Precio: 180$</strong></li>
+                   </ul>
+                    <!-- Enlaza a la página de pago con el plan anual -->
+                    <button type="button" onclick="window.location.href='pago.html?plan=anual'"><strong>Suscribirse</strong></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
